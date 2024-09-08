@@ -5,15 +5,296 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/2024-vite-online-course-platform/assets/main-8fb2a326.js"></script>
-    <link rel="stylesheet" href="/2024-vite-online-course-platform/assets/main-e523073d.css">
+    <script type="module" crossorigin src="/2024-vite-online-course-platform/assets/main-eaeaff46.js"></script>
+    <link rel="stylesheet" href="/2024-vite-online-course-platform/assets/main-c0f40b6a.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>    <h1>我是about</h1>
-    <footer class="footer">我是 footer</footer>
+    <header class="header">
+    <div class="container-fluid header-bg">
+        <nav class="navbar navbar-light navbar-expand-lg pt-lg-9 pb-lg-5 py-0">
+            <div class="container bg-white rounded-pill py-4 px-lg-9 py-lg-5">
+                <h1 class="logo d-flex align-items-center">
+                    <a href="index.html" target="_blank">Learning</a>
+                </h1>
+                <!-- 電腦版 -->
+                <div class="d-lg-flex d-none">
+                    <div class="pc-menu navbar-nav justify-content-start  align-items-center flex-grow-1 pe-3">
+                        <div class="nav-item dropdown position-static">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="offcanvasNavbarDropdown navbarDropdownLayer1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                探索
+                            </a>
+                            <!-- 第一層 -->
+                            <ul class="dropdown-menu menu-level-one" aria-labelledby="navbarDropdownLayer1">
+                                <li><a class="dropdown-item dropdown-item-title" href="#">探索全部</a></li>
+                                <li><a class="dropdown-item" href="#">音樂</a></li>
+                                <li><a class="dropdown-item" href="#">攝影</a></li>
+                                <li class="dropdown dropend w-100 position-static">
+                                    <a class="dropdown-item active dropdown-toggle d-flex align-items-center justify-content-between" role="button" id="navbarDropdownLayer2" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" href="#">
+                                        程式
+                                    </a>
+                                    <!-- 第二層 -->
+                                    <ul class="dropdown-menu menu-level-two" aria-labelledby="navbarDropdownLayer2">
+                                        <li><a class="dropdown-item dropdown-item-title" href="#">所有程式</a></li>
+                                        <li><a class="dropdown-item" href="#">程式入門</a></li>
+                                        <li class="dropdown dropend w-100 position-static">
+                                            <a class="dropdown-item active dropdown-toggle btn btn-primary-100 d-flex align-items-center justify-content-between" id="navbarDropdownLayer3" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" href="#">
+                                                網頁前端
+                                            </a>
+                                            <!-- 第三層 -->
+                                            <ul class="dropdown-menu menu-level-three">
+                                                <div class="card mb-3 w-100 border-0" aria-labelledby="navbarDropdownLayer3">
+                                                    <div class="d-flex gap-2 pb-5 border-bottom border-1 border-gray-40">
+                                                        <span class="title-deco"></span>
+                                                        <p class="title">熱門網頁前端課程</p>
+                                                    </div>
+                                                    <div class="d-flex gap-2 pt-5 pb-7 border-bottom border-1 border-gray-40">
+                                                        <div class="header-card-img-outer position-relative">
+                                                            <span
+                                                                class="discount-badge position-absolute badge text-danger-100 bg-danger-10 rounded-pill fs-8 px-2 py-1">8
+                                                                折</span>
+                                                            <img src="/2024-vite-online-course-platform/assets/course-5-18abd620.png" class="img-fluid header-card-img"
+                                                                alt="【課程縮圖】小白也會！從零開始學習 Python 程式設計">
+                                                        </div>
+                                                        <div class="header-card-content">
+                                                            <div class="card-body p-0">
+                                                                
+                                                                <h5 class="title mb-5">小白也會！從零開始學習 Python 程式設計</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-gray-40">
+                                                                    <!-- Avatar -->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img src="data:image/png;base64,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" class="object-fit-cover" alt="Kelly Hsu">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            Kelly Hsu
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="text-primary-100 title">NT$ 2,480</span>
+                                                                        <span class="origin-price fs-9">NT$ 3,200</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between py-2">
+                                                                    <p class="fs-8">已有 420 位同學加入</p>
+                                                                    <div class="d-flex align-items-center gap-1">
+                                                                        <span class="material-symbols-outlined icon-filled star-icon">star</span>
+                                                                        <span class="star">4.0</span>
+                                                                        <span class="comment-num">(333)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-2 pt-5 pb-7 border-bottom border-1 border-gray-40">
+                                                        <div class="header-card-img-outer position-relative">
+                                                            <span
+                                                                class="discount-badge position-absolute badge text-danger-100 bg-danger-10 rounded-pill fs-8 px-2 py-1">8
+                                                                折</span>
+                                                            <img src="/2024-vite-online-course-platform/assets/course-5-18abd620.png" class="img-fluid header-card-img"
+                                                                alt="【課程縮圖】小白也會！從零開始學習 Python 程式設計">
+                                                        </div>
+                                                        <div class="header-card-content">
+                                                            <div class="card-body p-0">
+                                                                
+                                                                <h5 class="title mb-5">小白也會！從零開始學習 Python 程式設計</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-gray-40">
+                                                                    <!-- Avatar -->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img src="data:image/png;base64,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" class="object-fit-cover" alt="Kelly Hsu">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            Kelly Hsu
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="text-gray-60 title">已購買</span>
+                                                                        <span class="origin-price fs-9">NT$ 3,200</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between py-2">
+                                                                    <p class="fs-8">已有 420 位同學加入</p>
+                                                                    <div class="d-flex align-items-center gap-1">
+                                                                        <span class="material-symbols-outlined icon-filled star-icon">star</span>
+                                                                        <span class="star">4.0</span>
+                                                                        <span class="comment-num">(333)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-2 pt-5 pb-7 border-bottom border-1 border-gray-40">
+                                                        <div class="header-card-img-outer position-relative">
+                                                            <span
+                                                                class="discount-badge position-absolute badge text-danger-100 bg-danger-10 rounded-pill fs-8 px-2 py-1">8
+                                                                折</span>
+                                                            <img src="/2024-vite-online-course-platform/assets/course-5-18abd620.png" class="img-fluid header-card-img"
+                                                                alt="【課程縮圖】小白也會！從零開始學習 Python 程式設計">
+                                                        </div>
+                                                        <div class="header-card-content">
+                                                            <div class="card-body p-0">
+                                                                
+                                                                <h5 class="title mb-5">小白也會！從零開始學習 Python 程式設計</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center pb-2 border-bottom border-1 border-gray-40">
+                                                                    <!-- Avatar -->
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="flex-shrink-0">
+                                                                            <img src="data:image/png;base64,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" class="object-fit-cover" alt="Kelly Hsu">
+                                                                        </div>
+                                                                        <div class="flex-grow-1 ms-3">
+                                                                            Kelly Hsu
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column">
+                                                                        <span class="text-primary-100 title">NT$ 2,480</span>
+                                                                        <span class="origin-price fs-9">NT$ 3,200</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between py-2">
+                                                                    <p class="fs-8">已有 420 位同學加入</p>
+                                                                    <div class="d-flex align-items-center gap-1">
+                                                                        <span class="material-symbols-outlined icon-filled star-icon">star</span>
+                                                                        <span class="star">4.0</span>
+                                                                        <span class="comment-num">(333)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                   
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">網頁後端</a></li>
+                                        <li><a class="dropdown-item" href="#">網站架設</a></li>
+                                        <li><a class="dropdown-item" href="#">資訊安全</a></li>
+                                        <li><a class="dropdown-item" href="#">程式語言</a></li>
+                                        <li><a class="dropdown-item" href="#">遊戲開發</a></li>
+                                        <li><a class="dropdown-item" href="#">資料科學</a></li>
+                                        <li><a class="dropdown-item" href="#">人工智慧</a></li>
+                                        <li><a class="dropdown-item" href="#">量化分析</a></li>
+                                    </ul>            
+                                </li>
+                                <li><a class="dropdown-item" href="#">程式</a></li>
+                                <li><a class="dropdown-item" href="#">藝術</a></li>
+                                <li><a class="dropdown-item" href="#">人文</a></li>
+                                <li><a class="dropdown-item" href="#">行銷</a></li>
+                                <li><a class="dropdown-item" href="#">投資理財</a></li>
+                                <li><a class="dropdown-item" href="#">心靈成長</a></li>
+                                <li><a class="dropdown-item" href="#">職場技能</a></li>
+                                <li><a class="dropdown-item" href="#">生活品味</a></li>
+                            </ul>
+                            
+                        </div>
+                        <!-- 搜尋 Bar -->
+                        <form class="d-lg-flex position-relative search-sec">
+                            <span class="material-symbols-outlined position-absolute top-50 translate-middle-y ms-2">search</span>
+                            <button class="btn btn-primary-100 text-nowrap search-btn translate-middle-y" type="submit">搜尋</button>
+                            <input class="form-control input-primary-100 ps-9 pe-14" type="text" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <!-- 手機版通知 & 購物車 icon -->
+                    <ul class="d-flex align-items-center d-lg-none">
+                        <li class="position-relative mx-3 my-2">
+                            <span class="material-symbols-outlined">notifications</span>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary-100 border border-light rounded-circle">
+                        </li>
+                        <li class="position-relative mx-3 my-2">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                            <span class="badge position-absolute top-0 start-100 translate-middle bg-primary-100 rounded-circle">2</span>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <!-- 手機版選單 -->
+                        <div class="mobile-menu navbar-nav justify-content-start align-items-center flex-grow-1 pe-3 d-lg-none">
+                            <div class="nav-item dropdown position-static">
+                                <!-- 第一層 -->
+                                <ul class="dropdown-menu show menu-level-one" aria-labelledby="navbarDropdownLayer1">
+                                    <li><a class="dropdown-item dropdown-item-title" href="#">探索全部</a></li>
+                                    <li><a class="dropdown-item" href="#">音樂</a></li>
+                                    <li><a class="dropdown-item" href="#">攝影</a></li>
+                                    <li class="dropdown dropend w-100 position-static">
+                                        <a class="dropdown-item dropdown-toggle btn btn-primary-100 d-flex align-items-center justify-content-between" role="button" id="navbarDropdownLayer2" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" href="#">
+                                            程式
+                                        </a>
+                                        <!-- 第二層 -->
+                                        <ul class="dropdown-menu menu-level-two" aria-labelledby="navbarDropdownLayer2">
+                                            <li><a class="dropdown-item dropdown-item-title" type="button" href="#" id="navbarDropdownLayer2" data-bs-toggle="dropdown"  aria-expanded="false" data-bs-auto-close="outside">所有程式</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">程式入門</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">網頁前端</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">網頁後端</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">網站架設</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">資訊安全</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">程式語言</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">遊戲開發</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">資料科學</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">人工智慧</a></li>
+                                            <li><a class="dropdown-item level-two-dropdown-item" href="#">量化分析</a></li>
+                                        </ul>            
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">程式</a></li>
+                                    <li><a class="dropdown-item" href="#">藝術</a></li>
+                                    <li><a class="dropdown-item" href="#">人文</a></li>
+                                    <li><a class="dropdown-item" href="#">行銷</a></li>
+                                    <li><a class="dropdown-item" href="#">投資理財</a></li>
+                                    <li><a class="dropdown-item" href="#">心靈成長</a></li>
+                                    <li><a class="dropdown-item" href="#">職場技能</a></li>
+                                    <li><a class="dropdown-item" href="#">生活品味</a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <ul class="d-flex align-items-center gap-lg-5">
+                            <li class="position-relative d-none d-lg-block">
+                                <span class="material-symbols-outlined">notifications</span>
+                                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary-100 border border-light rounded-circle">
+                            </li>
+                            <li class="position-relative d-none d-lg-block">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <span class="badge position-absolute top-0 start-100 translate-middle bg-primary-100 rounded-circle">2</span>
+                            </li>
+                            <li class="login-btn">
+                                <a href="login.html" class="btn btn-primary-100 w-100 text-nowrap">登入 / 註冊</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>    <h1>我是about</h1>
+    <footer class="footer">
+    <div class="container d-flex flex-column gap-9 gap-lg-5 py-10 py-lg-16">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-end gap-9">
+            <h1 class="logo-white d-flex align-items-center"><a href="index.html" target="_blank">LEARNING</a></h1>
+            <ul class="d-flex flex-column gap-7 flex-lg-row gap-lg-8">
+                <li><a href="#" target="_blank">常見問題</a></li>
+                <li><a href="#" target="_blank">關於我們</a></li>
+                <li><a href="#" target="_blank">隱私權政策</a></li>
+                <li><a href="#" target="_blank">使用者條款</a></li>
+            </ul>
+        </div>
+        <div class="d-flex flex-column gap-8 flex-lg-row-reverse justify-content-lg-between align-items-lg-end">
+            <ul class="d-flex gap-5">
+                <a href="#" target="_blank"><li class="social-icon"><i class="bi-line"></i></li></a>
+                <a href="#" target="_blank"><li class="social-icon"><i class="bi-youtube"></i></li></a>
+                <a href="#" target="_blank"><li class="social-icon"><i class="bi-facebook"></i></li></a>
+            </ul>
+            <p class="copyright">copyright © 2024 LEARNING 課程網站 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
     
   </body>
 </html>
