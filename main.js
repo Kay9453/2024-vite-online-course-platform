@@ -43,7 +43,7 @@ var hotCourseSwiper = new Swiper(".hotCourseSwiper", {
 });
 
 // 區塊：看看大家都買了什麼
-var popularCourseSwiper = new Swiper(".popularCourseSwiper", { 
+var popularCourseSwiper = new Swiper(".popularCourseSwiper", {
   spaceBetween: 24,
   breakpoints: {
     320: {

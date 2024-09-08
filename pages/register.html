@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="d-none d-lg-block w-100">
+        <img src="../assets/images/login.png" class="object-fit-cover h-100vh" alt="登入頁圖片">
+      </div>
+      <div class="container mt-11 mb-13 mt-lg-0 mb-lg-0">
+        <div class="row h-100">
+          <div class="col-lg-6 mx-auto">
+            <form action="" class="d-flex flex-column gap-7 gap-lg-9 h-100 justify-content-center">
+              <h1>歡迎加入 Learning</h1>
+              <div class="d-flex flex-column gap-5">
+                <button class="btn btn-custom btn-custom-outlined w-100">
+                  <img src="../assets/images/icons/ic_google.png" style="width: 24px; height: 24px;" alt="Google 帳號登入">
+                  <p class="mx-auto">使用 Google 帳號登入</p>
+                </button>
+                <button class="btn btn-custom btn-custom-outlined w-100">
+                  <img src="../assets/images/icons/ic_facebook.png" style="width: 24px; height: 24px;" alt="Facebook 帳號登入">
+                  <p class="mx-auto">使用 Facebook 帳號登入</p>
+                </button>
+                <button class="btn btn-custom btn-custom-outlined w-100">
+                  <img src="../assets/images/icons/ic_apple.png" style="width: 24px; height: 24px;" alt="Apple 帳號登入">
+                  <p class="mx-auto">使用 Apple 帳號登入</p>
+                </button>
+              </div>
+              <div>
+                <p class="title">或使用 Learning 帳號登入</p>
+                <div class="mb-5">
+                  <label for="login-email" class="form-label d-flex gap-1">
+                    <p>電子信箱</p>
+                    <span class="text-danger-100">*</span>
+                  </label>
+                  <input type="email" class="form-control border-gray-40 text-black" id="login-email" placeholder="請輸入電子信箱">
+                </div>
+                <div class="mb-5"> 
+                  <label for="login-pwd" class="form-label d-flex gap-1">
+                    <p>密碼</p>
+                    <span class="text-danger-100">*</span>
+                  </label>
+                  <div class="position-relative">
+                    <input type="password" class="form-control border-gray-40 text-black pe-9" id="login-pwd" placeholder="請輸入密碼">
+                    <img src="../assets/images/icons/ic_eye_close.png" class="position-absolute top-50 end-0 translate-middle-y me-5" style="width: 20px; height: 20px;" alt="不顯示密碼">
+                  </div>
+                </div>
+                <div class=""> 
+                  <label for="login-pwd" class="form-label d-flex gap-1">
+                    <p>確認密碼</p>
+                    <span class="text-danger-100">*</span>
+                  </label>
+                  <div class="position-relative">
+                    <input type="password" class="form-control border-gray-40 text-black pe-9" id="login-pwd" placeholder="請輸入密碼">
+                    <img src="../assets/images/icons/ic_eye_close.png" class="position-absolute top-50 end-0 translate-middle-y me-5" style="width: 20px; height: 20px;" alt="不顯示密碼">
+                  </div>
+                </div> 
+              </div>
+              <div class="d-flex flex-column gap-5">
+                <button type="submit" class="btn btn-custom btn-custom-primary w-100" disabled>立即登入</button>
+                <div class="d-flex gap-1 fs-8 flex-wrap">
+                  <p class="text-nowrap">建立帳號即表示您同意我們的</p>
+                  <div class="d-flex">
+                    <a href="#" class="text-decoration-underline text-nowrap" target="_blank">服務條款</a>
+                    <p>及</p>
+                    <a href="#" class="text-decoration-underline text-nowrap" target="_blank">隱私權政策</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2">
+                <p>已經有 Learning 帳號了嗎？</p>
+                <a href="login.html" class="text-decoration-underline text-primary-100 fw-semibold">立即登入</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

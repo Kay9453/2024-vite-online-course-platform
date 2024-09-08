@@ -1,3 +1,342 @@
-.index-title {
-  font-size: 100px;
+// 區塊：Banner
+.banner{
+  object-fit: cover;
+  height: 400px;
+}
+@include media-breakpoint-up(lg) {
+  .banner{
+    height: calc(100vh - 152px);
+  }
+  .banner-img{
+    border-radius: 80px;
+  }
+}
+
+.bannerSwiper{
+  .swiper-slide{
+    width: 100%;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .bannerSwiper{
+    .swiper-slide{
+      width: 80%;
+    }
+  }
+}
+
+.banner-title{ 
+  padding: 16px 24px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+@include media-breakpoint-up(lg) {
+  .banner-title{ 
+    border-radius: 0px 100px 0px 80px;
+    padding: 32px 80px 32px 120px;
+    width: fit-content;
+  }
+}
+
+.hot-title-deco{
+  background-image: url("../images/icons/ic_fire.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.banner-info{
+  bottom: 30%;
+  left: 16px;
+  right: 16px;
+}
+@include media-breakpoint-up(md) {
+  .banner-info{
+    left: 16px;
+    right: auto;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .banner-info{
+    left: 40px;
+  }
+}
+
+// Banner 下方點點
+.swiper-pagination-bullet{
+  background-color: $neutral-40;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  width: 24px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: $primary-100;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 15%;
+}
+
+// Banner 左右控制按鈕
+.swiper-button-prev{
+  left: 10%;
+}
+.swiper-button-next{
+  right: 10%;
+}
+.swiper-button-prev::after{
+  content: "\e5c4";
+  font-family: "Material Symbols Outlined";
+  color: $primary-100;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+  font-size: 24px;
+}
+.swiper-button-prev:hover::after {
+  color: #fff;
+  background-color: $primary-100;
+}
+
+.swiper-button-next::after{
+  content: "\e5c8";
+  font-family: "Material Symbols Outlined";
+  color: $primary-100;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+  font-size: 24px;
+}
+.swiper-button-next:hover::after{
+  color: #fff;
+  background-color: $primary-100;
+}
+
+.bannerSwiper{
+  .swiper-slide:not(.swiper-slide-active)::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #EDEDEDB2;
+    opacity: 0.7;
+  }
+}
+
+// 區塊：火熱募資課程
+.tags-group{
+  overflow-x: scroll;
+}
+@include media-breakpoint-up(lg) {
+  .tags-group{
+    overflow-x: unset;
+  }
+}
+
+.hot-course-bg::before{
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/deco/flower-2.png");
+  background-position: center;
+  background-size: cover;
+  top: 0px;
+  left: -100px;
+  z-index: -1;
+}
+@include media-breakpoint-up(lg) {
+  .hot-course-bg::before{
+    width: 560px;
+    height: 560px;
+    top: 72px;
+  }
+}
+
+// 區塊：看看大家都買了什麼
+.popular-course-bg {
+  background: linear-gradient(180deg, #F0F6FF 0%, #FFF 100%);
+  position: relative;
+}
+@include media-breakpoint-up(lg) {
+  .popular-course-bg::after{
+    position: absolute;
+    content: '';
+    width: 480px;
+    height: 480px;
+    background-image: url("../images/deco/flower-3.png");
+    background-position: center;
+    background-size: cover;
+    top: 215px;
+    left: -240px;
+  }
+}
+
+// 左右控制按鈕
+.popular-button-prev{
+  top: 45%;
+  left: -8px;
+  z-index: 10;
+}
+.popular-button-next{
+  justify-content: flex-end;
+  top: 45%;
+  right: -8px;
+  z-index: 10;
+}
+.popular-button-prev::after{
+  content: "\e5c4";
+  font-family: "Material Symbols Outlined";
+  color: $primary-100;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+  font-size: 24px;
+}
+.popular-button-prev:hover::after {
+  color: #fff;
+  background-color: $primary-100;
+}
+
+.popular-button-next::after{
+  content: "\e5c8";
+  font-family: "Material Symbols Outlined";
+  color: $primary-100;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.10), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+  font-size: 24px;
+}
+.popular-button-next:hover::after {
+  color: #fff;
+  background-color: $primary-100;
+}
+
+.popular-course-title{
+  z-index: 0;
+  &::after{
+    position: absolute;
+    content: '';
+    background-image: url("../images/deco/flower-1.png");
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    top: -24px;
+    left: -24px;
+    z-index: -1;
+  }
+}
+
+// 區塊：想學什麼
+.category-title-s-deco{
+  background-image: url("../images/deco/polygon-1.png");
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+.category-title-e-deco{
+  background-image: url("../images/deco/line-2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  min-height: 94px;
+}
+.category-course-num{
+  color: #6E7485;
+}
+// 課程類別顏色
+.category-bg-marketing{
+  background-color: #FF994F;
+}
+.category-bg-photo{
+  background-color: #5E5E5E;
+}
+.category-bg-growth{
+  background-color: #FF9BAD;
+}
+.category-bg-art{
+  background-color: #564FFD;
+}
+.category-bg-data{
+  background-color: #54DFF2;
+}
+.category-bg-investment{
+  background-color: #52E9BC;
+}
+.category-bg-music{
+  background-color: #CF93FF;
+}
+.category-bg-more{
+  background-color: $primary-100;
+}
+
+.category-group{
+  overflow-x: scroll;
+}
+@include media-breakpoint-up(lg) {
+  .category-group{
+    overflow-x: unset;
+  }
+}
+.category-item{
+  min-width: 272px;
+}
+@include media-breakpoint-up(lg) {
+  .category-item{
+    width: calc(50% - 12px);
+    min-width: auto;
+  }
+}
+
+// 區塊：頂尖講師帶你飛
+.top-teachers-title{
+  z-index: 0;
+  &::after{
+    position: absolute;
+    content: '';
+    background-image: url("../images/deco/flower-1.png");
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    top: -24px;
+    left: -24px;
+    z-index: -1;
+  }
+}
+
+.top-teacher-bg{
+  background-image: url("../images/deco/line-1.png");
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.top-teacher{
+  .card{
+    max-width: 416px;
+  }
+  .card-body{
+    margin-top: -96px;
+  }
 }

@@ -1,4 +1,212 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header-bg{
+  background-color: #fff;
+}
+@include media-breakpoint-up(lg) {
+  .header-bg{
+    background-color: $neutral-10;
+  }
+}
+
+.logo{
+  width: 125px;
+  height: 20px; 
+  a{
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    @include hide-text;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .logo{
+    width: 200px;
+    height: 32px; 
+  }
+}
+
+.search-sec{
+  width: 100%;
+  min-width: 425px;
+}
+.search-btn{
+  position: absolute;
+  top: 50%;
+  right: 8px;
+}
+
+.badge{
+  line-height: 1.333;
+}
+
+// 下拉式選單圖示
+.dropdown-toggle::after{
+  content: "\e313";
+  font-family: "Material Symbols Outlined";
+  border: 0;
+  vertical-align: middle;
+}
+.dropend .dropdown-toggle::after {
+  content: "\e5cc";
+  font-family: "Material Symbols Outlined";
+  border: 0;
+}
+
+.pc-menu{
+  .dropdown-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::after {
+      content: "\e5cc";
+      font-family: "Material Symbols Outlined";
+      border: 0;
+    }
+    &.dropdown-item-title::after{
+      content: "";
+    }
+  }
+} 
+
+// 選單
+.dropdown-menu{
+  padding: 12px;
+}
+.dropdown-item{
+  padding: 12px 12px 12px 24px;
+  border-radius: 12px;
+  &:hover{
+    color: white;
+    background-color: $primary-100;
+    font-weight: 600;
+  }
+} 
+.btn.show {
+  background-color: $primary-100;
+  border: 0;
+}
+.menu-level-one{
+  .dropdown-toggle:focus{
+    color: white;
+    background-color: $primary-100;
+  }
+}
+
+
+.navbar-expand-lg .navbar-nav .menu-level-one {
+  left: 216px;
+}
+.navbar-expand-lg .offcanvas .offcanvas-body{
+  justify-content: end;
+}
+
+// 選單層級
+.pc-menu{
+  .menu-level-one {
+    max-width:232px;
+    width: 18%;
+    height: calc(100vh - 96px);
+  }
+  .menu-level-two {
+    max-width: 232px;
+    width:100%;
+    height: calc(100vh - 96px);  
+  }
+  .menu-level-three {
+    max-width:399px;
+    width: 171%;
+    height: calc(100vh - 96px);
+    overflow-y: hidden; 
+  }
+}
+
+.mobile-menu{
+  .dropdown{
+    width: 100%;
+  }
+  .dropdown-menu{
+    border: 0;
+  }
+  .menu-level-two{
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .dropend .menu-level-two[data-bs-popper]{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+  }   
+}
+
+.mobile-menu{
+  .dropdown-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::after {
+      content: "\e5cc";
+      font-family: "Material Symbols Outlined";
+      border: 0;
+    }
+    &.dropdown-item-title::after{
+      content: "";
+    }
+    &.level-two-dropdown-item::after{
+      content: "";
+    }
+  }
+} 
+
+
+
+
+.title-deco{
+  background-image: url("../images/icons/ic_fire.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.header-card-img-outer{
+  width: 28%;
+}
+.header-card-img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.header-card-content{
+  width: 69%;
+}
+
+
+
+.discount-badge{
+  top: 4px;
+  left: 4px;
+}
+
+// PC & Mobile 共用：登入註冊按鈕
+.login-btn{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px 24px;
+  border-top: 1px solid $neutral-40;
+}
+@include media-breakpoint-up(lg) {
+  .login-btn{
+    width: fit-content;
+    position: relative;
+    padding: 0;
+    border: 0;
+  }
 }

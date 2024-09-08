@@ -1,0 +1,30 @@
+// 客製化按鈕
+.btn-custom{
+    padding: 16px 32px;
+    border-radius: 12px;
+}
+
+.btn-custom-primary{
+    color: #fff;
+    background-color: $primary-100;
+    &:hover{
+        color: #fff;
+        background-color: $primary-120;
+    }
+    &:disabled{
+        color: $neutral-60;
+        background-color: $neutral-40;
+        border: 0;
+    }
+}
+
+.btn-custom-outlined{
+    border: 1px solid $neutral-40;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    &:hover{
+        color: #fff;
+        background-color: $primary-120;
+    }
+}

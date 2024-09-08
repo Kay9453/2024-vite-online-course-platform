@@ -1,0 +1,116 @@
+//讓文字大小的通用樣式有響應式變化
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+//讓文字粗細的通用樣式有響應式變化
+$utilities: map-merge(
+  $utilities, (
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+
+// 圖片取代文字
+@mixin hide-text{
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: $font-weight-semibold;
+}
+
+.subtitle{
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+}
+
+// 原價有刪除號
+.origin-price{
+  text-decoration: line-through;
+  color: #808080;
+}
+
+// Tag 課程標籤
+.tag{
+  padding: 12px 16px;
+  border: 1px solid $neutral-40;
+  background-color: #fff;
+  border-radius: 12px;
+  text-wrap: nowrap;
+  &.active{
+    color: #fff;
+    border: 1px solid $primary-100;
+    background-color: $primary-100;
+  }
+  &:hover{
+    color: #fff;
+    border: 1px solid $primary-100;
+    background-color: $primary-100;
+  }
+}
+
+// 圓角樣式
+.radius-16{
+  border-radius: 16px;
+}
+.radius-20{
+  border-radius: 20px;
+}
+.radius-40{
+  border-radius: 40px;
+}
+.radius-80{
+  border-radius: 80px;
+}
+@include media-breakpoint-up(lg) {
+  .radius-lg-80{
+    border-radius: 80px;
+  }
+}
+
+.radius-t20{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.radius-b20{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.position-left-top-16{
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+// 評價
+.star-icon{
+  color: #F6BD2B;
+  font-size: 12px;
+}
+.star{
+  color: #180000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.comment-num{
+  font-size: 14px;
+  color: #808080;
+  font-weight: 500;
+}
+
+// 卡片陰影
+.item-shadow{
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.12);
+}
